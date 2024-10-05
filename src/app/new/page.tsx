@@ -101,7 +101,6 @@ export default function NewPost() {
               rows={8}
               id="post"
               placeholder="Post"
-              type="text"
               onChange={(e) => setBody(e.target.value)}
             ></textarea>
           </form>
