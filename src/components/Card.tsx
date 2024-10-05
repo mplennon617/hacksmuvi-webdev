@@ -14,11 +14,7 @@ type CardProps = {
 // Helpful playground for Tailwind.css: https://play.tailwindcss.com/
 const Card: React.FC<CardProps> = ({ card }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white px-12 py-6 m-3 lg:w-1/3">
-      <div className="font-bold text-xl text-gray-900">{card.title}</div>
-      <p className="text-gray-600 text-sm italic mb-4">by {card.author}</p>
-      <p className="text-gray-700 text-base">{card.body}</p>
-    </div>
+    // TODO: Design the card structure and styling using a prompt from the Prompt Cookbook.
   );
 };
 
