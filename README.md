@@ -25,6 +25,7 @@ You must have the following things installed on your laptop prior to the worksho
         * Debugger for Chrome (See [link](https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code))
         * Auto Rename Tag
         * Tailwind CSS IntelliSense
+        * TODO Highlight
 
 ## Setup Application
 
