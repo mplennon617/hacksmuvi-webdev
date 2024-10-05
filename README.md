@@ -7,6 +7,7 @@ For the sake of time, there is an incomplete (initial) version of the code, whic
 You can access the completed code by running `git checkout endofsession`.
 
 - To see all of the available branches (versions of the code), run `git branch -a`.
+- To navigate back to the main branch from endofsession, run `git checkout main`.
 
 # Setup (Do prior to the Workshop)
 
