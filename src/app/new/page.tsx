@@ -9,12 +9,7 @@ import { useEffect, useState } from "react";
 // This is our NewPost component. Since this file is named new.js,
 // Next.js renders this component when visiting http://localhost:3000/new/
 export default function NewPost() {
-  // Declare our state variables:
-  // - `body`, `author`, and `title` state variables change based on the corresponding textbox input.
-  // - The `error` state variable is a boolean flag that we set to true if anything goes wrong.
-  const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("");
-  const [title, setTitle] = useState("");
+  // ***TODO: Declare additional state variables to capture the data in each text box.***  
   const [error, setError] = useState(false);
 
   const { push } = useRouter();
@@ -23,23 +18,12 @@ export default function NewPost() {
   const handleSubmit = async () => {
     // Send a POST request to the server API to insert the new post data.
     try {
-      const data = {
-        body: body,
-        author: author,
-        title: title,
-      };
-      console.log(data);
-      const res = await fetch("/api/cards", {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      console.log(res);
-      // If the HTTP response is successful, we extract the data (in JSON format)
-      // and update our posts state variable with the data.
-      if (res.status === 200) {
-        console.log("Post successfully created!")
-      }
+        // ***TODO: Using fetch, send a POST request to the API.***
+        // Place the body, author, and title into a JSON object to send back.
+        // Use a prompt from the prompt cookbook to generate this code!
+        
+        // ***TODO: Uncomment below when done***
+        // push("/");
     } catch (e) {
       // If the HTTP response fails, it will throw an exception.
       // We catch it, and update the state variable to let the user know something went wrong.
@@ -63,6 +47,10 @@ export default function NewPost() {
           {/* An HTML form. Contains 3 text boxes (<input>, type="text") and their labels.y
             Note the onChange() event handlers that update the state variables above.
           */}
+
+          {
+            // ***TODO: Add event handlers for the form textboxes and buttons.*** 
+          }
           <form>
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -75,7 +63,6 @@ export default function NewPost() {
               id="author"
               placeholder="Author"
               type="text"
-              onChange={(e) => setAuthor(e.target.value)}
             ></input>
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -88,7 +75,6 @@ export default function NewPost() {
               id="title"
               placeholder="Title"
               type="text"
-              onChange={(e) => setTitle(e.target.value)}
             ></input>
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -101,7 +87,6 @@ export default function NewPost() {
               rows={8}
               id="post"
               placeholder="Post"
-              onChange={(e) => setBody(e.target.value)}
             ></textarea>
           </form>
           {/* Submit and Cancel buttons. Note the onClick event handlers. */}

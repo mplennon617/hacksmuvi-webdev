@@ -44,11 +44,7 @@ export default function Home() {
     }
   };
 
-  // useEffect() - runs whenever this component renders or updates
-  // - we call handleLoad(), which gets the cards from the API and updates the `cards` state variable.
-  useEffect(() => {
-    handleLoad();
-  }, []);
+  // ***TODO: Call handleLoad() as soon as the component renders.***
 
   // Component contents. Note the JavaScript logic injected in curly braces {}
   return (
@@ -68,11 +64,17 @@ export default function Home() {
         >
           New Card
         </Link>
-        {/* Here, cards?.map iterates through each Card, 
-         and generates a Card component with the current Card data. */}
+        {
+          // ***TODO: Map through every post fetched from the database (instead of just one).***
+        }
         <div className="flex flex-wrap items-center">
           {cards.length > 0 ? (
-            cards?.map((card, index) => <Card key={index} card={card} />)
+              // ***TODO: Use the Card component instead of this hardcoded Card jsx.***
+              <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white px-12 py-6 m-3 lg:w-1/3">
+                <div className="font-bold text-xl text-gray-900">{cards[0].title}</div>
+                <p className="text-gray-600 text-sm italic mb-4">by {cards[0].author}</p>
+                <p className="text-gray-700 text-base">{cards[0].body}</p>
+              </div>
           ) : (
             <p className="text-center">No cards yet!</p>
           )}

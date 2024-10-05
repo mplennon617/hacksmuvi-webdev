@@ -84,3 +84,5 @@ At this point, you are good to go for the workshop! See you there!
 |      Tailwind.css playground           |             An online IDE where you can experiment with Tailwind.css styling!                     |    https://play.tailwindcss.com/         |
 |        Deploy your website with Vercel          |                 A platform for you to easily deploy Next.js applications to the web.                 |      [Video](https://www.youtube.com/watch?v=2HBIzEx6IZA)       |
 |        Prompt Engineering 2024         |                  Short video "course" on prompt engineering basics.                |      [Video](https://www.youtube.com/watch?v=5i2Hn8OG94o)       |
+| Async/Await in Javascript | Background on asynchronous functions in Javascript. We use these all the time in API/web communication.| https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#async_and_await
+

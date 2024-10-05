@@ -14,6 +14,7 @@ type CardProps = {
 // Helpful playground for Tailwind.css: https://play.tailwindcss.com/
 const Card: React.FC<CardProps> = ({ card }) => {
   return (
+    <></>
     // TODO: Design the card structure and styling using a prompt from the Prompt Cookbook.
   );
 };

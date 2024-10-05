@@ -59,7 +59,12 @@ export default function Home() {
       </Head>
       <main className="mt-4 md:container mx-auto">
           {cards.length > 0 ? (
-            <Card key={0} card={cards[0]} />
+            <div> 
+                <p className="text-2xl underline">Unstyled card Details:</p>
+                <p>{cards[0].title}</p>
+                <p>{cards[0].body}</p>
+                <p>{cards[0].author}</p>
+            </div>
           ) : failedToLoad ? (
             <p className="text-xl text-center">Card failed to load</p>
         ) : <p className="text-xl text-center">Loading card...</p>}
