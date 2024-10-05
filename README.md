@@ -71,9 +71,22 @@ At this point, you are good to go for the workshop! See you there!
 
 # Prompt Cookbook
 
-| Name         | Type                      |    Prompt Template     |
+| Name         | Technique                      |    Prompt Template     |
 |------------------|----------------------------------|-------------|
-|                  |                                  |             |
+|        Generate component variants          |                  One-shot                |        New Prompt: Using the existing structure of the ...TECH STACK... code provided below, generate three unique variants of the card component with different styles and layouts. Each variant should have a distinct purpose, such as showcasing a product, displaying a user profile, and highlighting an event. Ensure that the components remain responsive and adhere to best practices in ...YOUR TECH STACK....
+
+Existing HTML Structure:
+
+...CODE...
+
+Instructions:
+
+Create three distinct ...CODE... variants using the provided structure.
+...ADDITIONAL INSTRUCTIONS FOR UI/UX DESIGN... 
+Use different CSS styles for each variant to differentiate them visually.
+Implement any necessary props in React to make the components reusable.
+Test each variant to ensure they function correctly in a Next.js environment.
+Document the changes and reasoning for the design choices in a comment section.     |
 |                  |                                  |             |
 
 
