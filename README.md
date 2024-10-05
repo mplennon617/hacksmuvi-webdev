@@ -19,6 +19,13 @@ You must have the following things installed on your laptop prior to the worksho
 * **A code editor or IDE** (VSCode, Sublime Text, etc.)
     * For this workshop, I will be using [VSCode.](https://code.visualstudio.com/download)
 
+    * Suggested VSCode extensions (find Extensions tab, or `Ctrl + Shift + X`):
+        * Next.js React Snippets by iJS
+        * ESLint
+        * Debugger for Chrome (See [link](https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code))
+        * Auto Rename Tag
+        * Tailwind CSS IntelliSense
+
 ## Setup Application
 
 ### General
